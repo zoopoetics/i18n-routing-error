@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "builds": [{ "src": "packages/site/package.json", "use": "@now/next" }],
+  "rewrites": [{ "source": "/(.*)", "destination": "/packages/site/$1" }],
+  "scope": "10x-genomics"
+}
